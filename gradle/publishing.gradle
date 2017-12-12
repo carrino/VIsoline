@@ -116,7 +116,6 @@ bintray {
         
         version {
             name              = project.version
-            vcsTag            = 'v' + project.version
         }
     }
 }

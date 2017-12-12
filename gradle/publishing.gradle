@@ -99,8 +99,8 @@ if (!project.hasProperty('bintrayUsername')) ext.bintrayUsername = ''
 if (!project.hasProperty('bintrayApiKey')) ext.bintrayApiKey = ''
 
 bintray {
-    user = project.bintrayUsername
-    key = project.bintrayApiKey
+    user = System.getenv('BINTRAY_USER')
+    key = System.getenv('BINTRAY_KEY')
     publications = ['mavenCustom']
     pkg {
         repo                  = publishing.bintray.repo

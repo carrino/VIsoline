@@ -81,7 +81,7 @@ publishing {
         mavenCustom(MavenPublication) {
             groupId publishing.groupId
             artifactId publishing.artifactId
-            version publishing.versionId
+            version project.version
             from components.java
             artifact sourcesJar
             artifact javadocJar
@@ -115,8 +115,8 @@ bintray {
         publicDownloadNumbers = true
         
         version {
-            name              = publishing.versionId
-            vcsTag            = 'v' + publishing.versionId
+            name              = project.version
+            vcsTag            = 'v' + project.version
         }
     }
 }

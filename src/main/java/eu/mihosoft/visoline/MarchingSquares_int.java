@@ -114,7 +114,7 @@ public class MarchingSquares_int {
                     }
                 }
 
-                if (caseIndex != 0 || caseIndex != 15) {
+                if (caseIndex != 0 && caseIndex != 15) {
                     int n = 0;
                     while (lineSegments[caseIndex][n] != -1) {
 
